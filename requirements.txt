@@ -1,0 +1,30 @@
+# VaultMind v2 — Python dependencies
+
+flask>=3.0.0
+python-dotenv>=1.0.0
+
+# ── RAG stack ───────────────────────────────────────────────────────────────
+langchain>=0.2.0
+langchain-community>=0.2.0
+langchain-groq>=0.1.0
+langchain-huggingface>=0.0.3
+chromadb>=0.5.0
+sentence-transformers>=3.0.0
+
+# ── Document loaders ────────────────────────────────────────────────────────
+pypdf>=4.0.0              # PDF
+python-docx>=1.1.0        # DOCX / DOC
+python-pptx>=0.6.21       # PPTX / PPT
+openpyxl>=3.1.0           # XLSX / XLS
+unstructured>=0.14.0      # Multi-format fallback (RTF, EML, EPUB, etc.)
+beautifulsoup4>=4.12.0    # HTML parsing
+lxml>=4.9.0               # XML / HTML backend
+pillow>=10.0.0            # Image support (size/mode info)
+
+# ── Optional: OCR for images ────────────────────────────────────────────────
+# pytesseract>=0.3.10     # also needs: sudo apt install tesseract-ocr
+# easyocr>=1.7.0          # GPU-friendly alternative
+
+# ── Optional: additional formats ────────────────────────────────────────────
+# extract-msg>=0.41.0     # Outlook .msg files
+# ebooklib>=0.18          # EPUB alternative
